@@ -1,28 +1,18 @@
 import React from 'react';
-import Header from './components/Header';
-import Banner from './components/Banner';
-
-import Categories from './components/Categories';
-import Products from './components/Product';
-import Footer from './components/Footer';
-import './App.css';
+import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ProductCarousel from './components/ProductCarousel';
-import Imagegrid from './components/Imagegrid';
-
+import Home from './Pages/Home';
+import Contact from './Pages/Contact';
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <Header />
-       
-      <Banner />
-      <Categories />
-      <ProductCarousel/> 
-      <Imagegrid/>
-      <Products />
-      <Footer />
-     
+     <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path="/Contact" element={<Contact />} />
+    </Routes>
+   
     </>
   );
 }

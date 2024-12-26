@@ -8,16 +8,12 @@ const Categories = () => {
     { name: 'Apple', image: 'assets/image 6.png', bgColor: '#F48FB1' },
     { name: 'Orange', image: 'assets/image 7.png', bgColor: '#FFE082' },
     { name: 'Lichi', image: 'assets/image 8.png', bgColor: '#C5CAE9' },
-    { name: 'Mango', image: 'assets/image 9.png', bgColor: '#FFEB3B' },
-    { name: 'Banana', image: 'assets/image 10.png', bgColor: '#FFF59D' },
     { name: 'Peach', image: 'assets/image 3.png', bgColor: '#FFDDC1' },
     { name: 'Vegetables', image: 'assets/image 4.png', bgColor: '#D4E157' },
     { name: 'Strawberry', image: 'assets/image 5.png', bgColor: '#FFCDD2' },
     { name: 'Apple', image: 'assets/image 6.png', bgColor: '#F48FB1' },
     { name: 'Orange', image: 'assets/image 7.png', bgColor: '#FFE082' },
     { name: 'Lichi', image: 'assets/image 8.png', bgColor: '#C5CAE9' },
-    { name: 'Mango', image: 'assets/image 9.png', bgColor: '#FFEB3B' },
-    { name: 'Banana', image: 'assets/image 10.png', bgColor: '#FFF59D' },
   ];
 
   const chunkedCategories = [];
@@ -39,14 +35,14 @@ const Categories = () => {
                 {categoryGroup.map((category, idx) => (
                   <div
                     key={idx}
-                    className="col-2"
+                    className="col-md-2"
                     style={{
                       display: 'flex',
                       justifyContent: 'center',
                     }}
                   >
                     <div
-                      className="card m-2"
+                      className="card"
                       style={{
                         width: '10rem',
                         backgroundColor: category.bgColor,

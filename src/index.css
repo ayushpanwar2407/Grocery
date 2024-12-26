@@ -1,13 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Quicksand", serif !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.text-align{
+  text-align: start !important;
+}
+.img-width{
+  width: 320px;
+ 
+}
+.w-70{
+  width: 100%;
+}
+
+
+/* Header */
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0px;
+  z-index: 999;
+}
+
+header h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #4caf50;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  font-size: 14px;
+  color: #555;
+  font-weight: 500;
+}
+
+header button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+header button:hover {
+  background-color: #3c9142;
+}
+.full-page-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.95); /* Adjust background opacity */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  z-index: 9999;
+}
+
+.navbar-nav .nav-item {
+  margin: 15px 0;
+}
+
+.navbar-toggler {
+  background-color: transparent;
+  border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.btn-primary {
+  background-color: #3bb77e !important;
+  border: 1px solid #3bb77e !important;
+  border-radius: 3px !important;
+}
+.head-brocry {
+  color: #253d4e !important;
+  font-weight: 700 !important;
+  font-size: 46px !important;
+}
+h2 {
+  font-weight: 700 !important;
+}
+
+/* Banner */
+.bg-success {
+  background-image: url("components/Group 23.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 60px 20px;
+}
+.bg-image {
+  background-image: url("components/Group 30.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 60px 20px;
+}
+.bg-success h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.bg-success p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.bg-success form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.bg-success form input {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.bg-success form button {
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.bg-success form button:hover {
+  background-color: #e68a00;
+}
+.pd-20 {
+  padding: 15px !important;
+}
+
+/* Categories */
+.container .card {
+  border: none;
+  border-radius: 10px;
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  flex: 1;
+}
+
+.container .card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Products */
+.card {
+  border: none;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 15px 0;
+}
+
+.card h5 {
+  font-size: 18px;
+  color: #333;
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+}
+
+.card button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 100%;
+}
+
+.card button:hover {
+  background-color: #3c9142;
+}
+
+/* Slider */
+.carousel-item img {
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Utility Classes */
+.py-50 {
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+.hover-img {
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  header h1 {
+    font-size: 20px;
+  }
+
+  header nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .bg-success h2 {
+    font-size: 28px;
+  }
+
+  .bg-success form input {
+    width: 80%;
+  }
+
+  .container .card {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  header nav ul {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .bg-success h2 {
+    font-size: 24px;
+  }
+
+  .bg-success p {
+    font-size: 16px;
+  }
+
+  .bg-success form input {
+    width: 100%;
+  }
+
+  .bg-success form button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 18px;
+  }
+
+  header nav ul li {
+    margin: 0 10px;
+  }
+
+  .bg-success h2 {
+    font-size: 20px;
+  }
+
+  .bg-success p {
+    font-size: 14px;
+  }
+}
+
+.rating {
+  color: #ffc107;
+  font-size: 1.5rem;
+}
+.btn-success {
+  background-color: #3bb77e !important;
+  border-radius: 4px !important;
 }

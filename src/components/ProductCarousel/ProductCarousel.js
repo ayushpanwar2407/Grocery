@@ -86,7 +86,7 @@ const ProductCarousel = ()=>{
                 >
                   <div className="row">
                     {chunk.map((product) => (
-                      <div className="col-md-3" key={product.id}>
+                      <div className="col-md-3 pd-20" key={product.id}>
                         <div className="card">
                           <img
                             src={product.image}
@@ -96,13 +96,13 @@ const ProductCarousel = ()=>{
                           <div className="card-body">
                             <h5 className="card-title">{product.name}</h5>
                             <p className="card-text text-muted">{product.category}</p>
-                            <p>
+                            <h5 className="mb-2 text-green">
                               <strong>{product.price}</strong>{" "}
                               <span className="text-decoration-line-through text-muted">
                                 {product.originalPrice}
                               </span>
-                            </p>
-                            <button className="btn btn-success">Add</button>
+                            </h5>
+                            <button className="btn btn-success"> Add</button>
                           </div>
                         </div>
                       </div>
