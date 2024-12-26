@@ -1,0 +1,175 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header */
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+}
+
+header h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #4CAF50;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  font-size: 14px;
+  color: #555;
+  font-weight: 500;
+}
+
+header button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+header button:hover {
+  background-color: #3c9142;
+}
+
+/* Banner */
+.bg-success {
+  background-image: url('components/Group\ 23.png');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+.bg-success h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.bg-success p {
+  font-size: 18px;
+}
+
+.bg-success form input {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  width: 50%;
+}
+
+.bg-success form button {
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.bg-success form button:hover {
+  background-color: #e68a00;
+}
+
+/* Categories */
+.container .card {
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container .card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Products */
+.card {
+  border: none;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 15px 0;
+  text-align: center;
+}
+
+.card h5 {
+  font-size: 18px;
+  color: #333;
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+}
+
+.card button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 100%;
+}
+
+.card button:hover {
+  background-color: #3c9142;
+}
+
+/* Slider */
+.carousel-item img {
+  border-radius: 10px;
+}
+
+
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+footer p {
+  margin: 0;
+}
+.py-50{
+  padding-top: 140px;
+    padding-bottom: 140px;
+}
+.hover-img{
+  cursor: pointer;
+}
